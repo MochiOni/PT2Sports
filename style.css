@@ -34,6 +34,7 @@ li{
     cursor: pointer;
     transition: 0.4s all ease;
     padding: 15px;
+    text-align: center;
 }
 li:hover{
     color: gray;
