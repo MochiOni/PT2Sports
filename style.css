@@ -1,0 +1,57 @@
+/*This is the CSS for the Body*/
+body{
+    background-image: url('basketball.jpg');
+    background-size: cover;
+    color: white;
+}
+/*This is the CSS for the iframe*/
+iframe{
+     height: 1000px;
+     width: 1370px;
+}
+p{
+    font-size: 35px;
+    text-align: center;
+    border: 3px solid gray;
+    margin: 25px;
+    padding: 5px;
+}
+/*This is the CSS for the heading*/
+h1{
+    text-align: center;
+    font-size: 30px;
+    border: 15px double white;
+    padding: 30px;
+    margin: 30px 50px 100px;
+}
+/*This is the CSS for my hover*/
+li{
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-family: sl sans serif;
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.4s all ease;
+    padding: 15px;
+}
+li:hover{
+    color: gray;
+    transition: 0.4s all ease;
+}
+li:after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+li:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
